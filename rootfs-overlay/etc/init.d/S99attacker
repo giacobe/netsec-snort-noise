@@ -1,0 +1,6 @@
+#!/bin/sh
+case "$1" in
+  start) /usr/bin/noise_bot.py >/dev/console 2>&1 & ;;
+  stop) killall noise_bot.py 2>/dev/null || true ;;
+esac
+exit 0
